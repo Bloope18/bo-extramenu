@@ -1,6 +1,11 @@
 local notify = require 'client.notify'
 local config = require 'config'
 
+local GetVehiclePedIsIn = GetVehiclePedIsIn
+local GetPedInVehicleSeat = GetPedInVehicleSeat
+local IsVehicleExtraTurnedOn = IsVehicleExtraTurnedOn
+local SetVehicleExtra = SetVehicleExtra
+
 local function extramenuOpen()
     local playerVehicle = GetVehiclePedIsIn(cache.ped, false)
     local playerDriver = GetPedInVehicleSeat(playerVehicle, -1)
