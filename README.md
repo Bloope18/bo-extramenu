@@ -1,10 +1,3 @@
-## Support
-
-If you’d like to support my work, you can do so here: https://ko-fi.com/bloope18
-
-To see all my updates, you can join here: https://discord.gg/RxCVG3gPff
-You can also get support with the script if you run into any issues!
-
 # bo-extramenu
 
 This extramenu is designed for vehicle customization in FiveM, allowing players to easily add or remove extras from vehicles. The menu utilizes ox_lib's built-in context menu functionality for smooth operation. Players can open the extramenu either via a command or an export, providing flexible access to vehicle modifications.
@@ -30,3 +23,10 @@ exports['bo-extramenu-dev']:extramenuOpen()
 ## Dependencies
 
 - ox_lib (https://github.com/overextended/ox_lib)
+
+## Support
+
+If you’d like to support my work, you can do so here: https://ko-fi.com/bloope18
+
+To see all my updates, you can join here: https://discord.gg/RxCVG3gPff
+You can also get support with the script if you run into any issues!
