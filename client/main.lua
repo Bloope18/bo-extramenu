@@ -1,13 +1,12 @@
 local notify = require 'client.notify'
 local config = require 'config'
 
-local GetVehiclePedIsIn = GetVehiclePedIsIn
 local GetPedInVehicleSeat = GetPedInVehicleSeat
 local IsVehicleExtraTurnedOn = IsVehicleExtraTurnedOn
 local SetVehicleExtra = SetVehicleExtra
 
 local function extramenuOpen()
-    local playerVehicle = GetVehiclePedIsIn(cache.ped, false)
+    local playerVehicle = cache.vehicle
     local playerDriver = GetPedInVehicleSeat(playerVehicle, -1)
 
     if playerVehicle == 0 then
@@ -26,31 +25,17 @@ local function extramenuOpen()
             extrasFound = true
             local modUsed = IsVehicleExtraTurnedOn(playerVehicle, vehicleMod)
 
-            if modUsed then
-                vehicleOptions[#vehicleOptions + 1] = {
-                    title = locale('vehicle_extra') .. ' ' .. vehicleMod,
-                    description = locale('extra_on_use'),
-                    icon = 'fa-solid fa-unlock',
+            vehicleOptions[#vehicleOptions + 1] = {
+                title = locale('vehicle_extra') .. ' ' .. vehicleMod,
+                description = modUsed and locale('extra_on_use') or locale('extra_not_used'),
+                icon = modUsed and 'unlock' or 'lock',
 
-                    onSelect = function()
-                        SetVehicleExtra(playerVehicle, vehicleMod, 1)
-                        Wait(200)
-                        extramenuOpen()
-                    end
-                }
-            else
-                vehicleOptions[#vehicleOptions + 1] = {
-                    title = locale('vehicle_extra') .. ' ' .. vehicleMod,
-                    description = locale('extra_not_used'),
-                    icon = 'fa-solid fa-lock',
-
-                    onSelect = function()
-                        SetVehicleExtra(playerVehicle, vehicleMod, 0)
-                        Wait(200)
-                        extramenuOpen()
-                    end
-                }
-            end
+                onSelect = function()
+                    SetVehicleExtra(playerVehicle, vehicleMod, modUsed and 1 or 0)
+                    Wait(200)
+                    extramenuOpen()
+                end
+            }
         end
     end
 
