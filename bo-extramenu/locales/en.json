@@ -1,9 +1,0 @@
-{
-    "extramenu_title": "Vehicle Extras",
-    "vehicle_extra": "Extra",
-    "extra_not_used": "This extra is not in use.",
-    "extra_on_use": "This extra is in use.",
-    "no_extras_found": "No extras are available for this vehicle.",
-    "player_not_driver": "You need to be the driver of the vehicle.",
-    "player_not_vehicle": "You need to be in the vehicle."
-}

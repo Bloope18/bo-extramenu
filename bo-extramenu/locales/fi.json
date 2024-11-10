@@ -1,9 +1,0 @@
-{
-    "extramenu_title": "Ajoneuvon lisäosat",
-    "vehicle_extra": "Lisäosa",
-    "extra_not_used": "Tämä lisäosa on pois käytöstä.",
-    "extra_on_use": "Tämä lisäosa on käytössä.",
-    "no_extras_found": "Tähän ajoneuvoon ei ole saatavilla lisäosia.",
-    "player_not_driver": "Sinun täytyy olla ajoneuvon kuljettaja.",
-    "player_not_vehicle": "Sinun täytyy olla ajoneuvossa."
-}
