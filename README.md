@@ -2,7 +2,7 @@
 
 This extramenu is designed for vehicle customization in FiveM, allowing players to easily add or remove extras from vehicles. The menu utilizes ox_lib's built-in context menu functionality for smooth operation. Players can open the extramenu either via a command or an export, providing flexible access to vehicle modifications.
 
-![screenshot]([[imageFolder/screenshot.png](https://files.fm/u/fnstcwywhj](https://imgur.com/SZBKJ6l)))
+![SZBKJ6l](https://github.com/user-attachments/assets/d5b9e106-a08e-45a4-94f4-8c9b016d5af5)
 
 ## Installation
 
