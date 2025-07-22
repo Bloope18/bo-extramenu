@@ -61,6 +61,18 @@ if config.commandEnabled then
     end, false)
 end
 
+if config.keybindEnabled then
+    lib.addKeybind({
+        name = 'bo-extramenu:keybind:open',
+        description = locale('keybind_description'),
+        defaultKey = config.keybindKey,
+
+        onPressed = function()
+            extramenuOpen()
+        end
+    })
+end
+
 AddEventHandler('onResourceStop', function(resource)
     if resource == GetCurrentResourceName() then
         local contextMenu = lib.getOpenContextMenu()
