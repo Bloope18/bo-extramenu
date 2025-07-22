@@ -5,5 +5,6 @@
     "extra_on_use": "Tämä lisäosa on käytössä.",
     "no_extras_found": "Tähän ajoneuvoon ei ole saatavilla lisäosia.",
     "player_not_driver": "Sinun täytyy olla ajoneuvon kuljettaja.",
-    "player_not_vehicle": "Sinun täytyy olla ajoneuvossa."
+    "player_not_vehicle": "Sinun täytyy olla ajoneuvossa.",
+    "keybind_description": "Avaa ajoneuvon lisäosien valikko."
 }
