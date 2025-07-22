@@ -5,5 +5,6 @@
     "extra_on_use": "This extra is in use.",
     "no_extras_found": "No extras are available for this vehicle.",
     "player_not_driver": "You need to be the driver of the vehicle.",
-    "player_not_vehicle": "You need to be in the vehicle."
+    "player_not_vehicle": "You need to be in the vehicle.",
+    "keybind_description": "Open the vehicle extras menu."
 }
