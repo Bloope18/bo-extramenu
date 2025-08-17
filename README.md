@@ -17,9 +17,8 @@ ensure bo-extramenu
 
 You can open the extra menu by using a command. The command to open the menu can be configured in the `config.lua` file. You can also open the extramenu via export. 
 
-```
-exports['bo-extramenu']:extramenuOpen()
-```
+`exports['bo-extramenu']:extramenuOpen()`
+
 
 ## Dependencies
 
